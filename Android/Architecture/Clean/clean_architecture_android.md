@@ -99,3 +99,27 @@ class GetUserProfileUseCase(private val repository: UserRepository) {
 ## 🧠 Summary
 
 Clean Architecture enforces **separation of concerns** and makes your app **robust and testable** by following a strict layered structure. It is ideal for large-scale applications and teams working on long-term maintainable Android projects.
+
+# Comparison: Clean Architecture vs Other Architectures (MVVM, MVP)
+
+| Aspect               | Clean Architecture                               | MVVM (Model-View-ViewModel)                        | MVP (Model-View-Presenter)                      |
+|----------------------|-------------------------------------------------|---------------------------------------------------|------------------------------------------------|
+| **Main Idea**         | Separation of concerns into layers (Domain, Data, Presentation) with clear dependency rules. | Separation of UI (View) and business logic (ViewModel) with LiveData or StateFlow. | Separates View and Presenter, where Presenter handles UI logic and communicates with Model. |
+| **Layers**           | 1. **Entities (Domain layer)**<br>2. **Use Cases / Interactors**<br>3. **Interface Adapters / Presenters**<br>4. **Framework & Drivers (UI, DB, Network)** | Usually 3 layers:<br>1. Model<br>2. View<br>3. ViewModel | 3 layers:<br>1. Model<br>2. View<br>3. Presenter |
+| **Dependency Rule**   | Inner layers should never depend on outer layers; dependencies point inward. | View depends on ViewModel; ViewModel depends on Model or Repository. | View depends on Presenter; Presenter depends on Model/Repository. |
+| **Testability**       | High - business logic is isolated in domain/use case layer. | Moderate to high - ViewModel can be tested separately from View. | Moderate - Presenter can be tested, but View is often harder to isolate. |
+| **UI Framework Dependency** | UI frameworks are in the outermost layer; domain and use cases are independent of Android. | ViewModel can contain Android-specific code but often kept Android-agnostic for testability. | Presenter usually contains Android UI logic but aims to be platform-independent. |
+| **Code Complexity**   | Higher initial complexity due to many layers and interfaces. | Moderate complexity; easier to start with but can grow large. | Moderate complexity but can lead to tight coupling if not careful. |
+| **Typical Use Cases** | Large, complex apps where long-term maintenance and testability are important. | Apps with dynamic UI updates and reactive data streams, e.g., using Jetpack libraries. | Apps with simpler UI and logic separation needs, common before MVVM popularity. |
+| **Examples in Android** | Using Use Cases + Repositories + Clean separation + Dependency Injection (Hilt/Dagger) | Using Jetpack Compose or XML with ViewModel + LiveData/Flow | Using Activities/Fragments as Views + Presenter classes handling logic |
+
+---
+
+### Summary
+
+- **Clean Architecture** focuses on strict layering and separation of concerns with clear rules on dependencies to keep business logic isolated from UI and frameworks. It’s ideal for maintainable, scalable, and testable large apps.
+- **MVVM** is simpler, focuses on reactive UI data binding, and fits well with Jetpack Compose and Android Architecture Components.
+- **MVP** separates UI and logic but often leads to more boilerplate and can become tightly coupled without careful design.
+
+---
+
