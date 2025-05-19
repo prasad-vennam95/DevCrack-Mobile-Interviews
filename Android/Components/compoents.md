@@ -36,9 +36,9 @@ Android applications are built using four main components:
 ### 7. **How does Android handle background tasks efficiently?**
     - **Answer**: By using components like `WorkManager`, `JobScheduler`, and `Foreground Services` to manage tasks based on system resources and constraints.
 
-    ### 8. **What are all the launch modes in Android?**
-        - **Answer**: Android provides four launch modes for activities, defined in the `AndroidManifest.xml` or via `Intent` flags:
-          1. **standard**: Default mode. A new instance of the activity is created every time it is launched.
+### 8. **What are all the launch modes in Android?**
+    - **Answer**: Android provides four launch modes for activities, defined in the `AndroidManifest.xml` or via `Intent` flags:
+        1. **standard**: Default mode. A new instance of the activity is created every time it is launched.
           2. **singleTop**: If an instance of the activity is already at the top of the stack, no new instance is created; instead, the existing instance handles the intent.
           3. **singleTask**: A new task is created, and the activity becomes the root of the task. If an instance already exists, it is reused, and other activities in the task are cleared.
           4. **singleInstance**: Similar to `singleTask`, but the activity is the only one in the task. Other activities are launched in a separate task.
