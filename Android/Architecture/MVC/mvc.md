@@ -18,7 +18,7 @@ fun addTask(task: Task) { tasks.add(task) }
 fun getTasks(): List<Task> = tasks
 }
 
-## 2. **View Layer****
+## 2. **View Layer**
     A. Represents the UI layer, responsible for displaying data to the user and capturing user input.
     B. In Android this is typically XML layouts, custom Views, ViewGroups, and UI widgets.
     C. The View doesn’t handle any complex logic itself.
