@@ -156,6 +156,3 @@ An Activity that listens for a button click, calls the Model to fetch data, and 
    ### 5. Have you ever migrated an MVC-based app to a different architecture? Why and how?
           1. Share a real-world example (e.g., moving to MVVM for better lifecycle handling). 
           2. Explain the migration process, challenges (e.g., refactoring Controllers to ViewModels), and benefits.
-   
-
-    
