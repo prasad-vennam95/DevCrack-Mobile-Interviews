@@ -1,6 +1,13 @@
-# 📱 Mobile Dev Interview Prep
+# 📱 DevCrack: Mobile Interview Preparation
 
-An open-source collection of interview questions and answers for mobile developers – Android, iOS, and Cross-platform. 
+A community-driven open-source repository to help mobile developers prepare for technical interviews. Covers Android, iOS, Flutter, KMM, system design, testing, architecture, and more!
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+![GitHub Repo stars](https://img.shields.io/github/stars/vennamprasad/DevCrack-Mobile-Interviews?style=social)
+![GitHub forks](https://img.shields.io/github/forks/vennamprasad/DevCrack-Mobile-Interviews?style=social)
+![GitHub issues](https://img.shields.io/github/issues/vennamprasad/DevCrack-Mobile-Interviews)
+![GitHub last commit](https://img.shields.io/github/last-commit/vennamprasad/DevCrack-Mobile-Interviews)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/vennamprasad/DevCrack-Mobile-Interviews/pulls)
 
 ## 📂 Structure
 Questions are categorized by platform and topic.
