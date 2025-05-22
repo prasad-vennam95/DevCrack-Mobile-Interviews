@@ -1,4 +1,5 @@
 # 📱 DevCrack: Mobile Interview Preparation
+![DevCrack Logo](Assets/devcrack.png)
 
 A community-driven open-source repository to help mobile developers prepare for technical interviews. Covers Android, iOS, Flutter, KMM, system design, testing, architecture, and more!
 
