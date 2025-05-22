@@ -429,5 +429,32 @@ class Person(val name: String, val age: Int) {
     }
 }
 ```
-### Visibility Modifiers
-![screenshot](images/kotlin_visibility_modifiers.png)
+### Visibility Modifiers in Kotlin
+
+Kotlin provides four visibility modifiers for classes, objects, interfaces, constructors, functions, and properties:
+
+| Modifier   | Description                                                                 | Scope                                  |
+|------------|-----------------------------------------------------------------------------|----------------------------------------|
+| `public`   | Visible everywhere (default if not specified).                              | Any code can access                    |
+| `internal` | Visible within the same module.                                             | Same module                            |
+| `protected`| Visible to the class and its subclasses.                                    | Subclasses only (not top-level)        |
+| `private`  | Visible only within the file or class where it is declared.                 | Same file or class                     |
+
+#### Example
+
+```kotlin
+class Example {
+    private val privateValue = 1
+    protected val protectedValue = 2
+    internal val internalValue = 3
+    public val publicValue = 4 // 'public' is the default
+}
+```
+
+- `private`: Only accessible inside `Example`.
+- `protected`: Accessible in `Example` and its subclasses.
+- `internal`: Accessible anywhere in the same module.
+- `public`: Accessible everywhere.
+
+For top-level declarations (outside classes), `protected` is not allowed.
+
