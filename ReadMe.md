@@ -10,16 +10,6 @@ A community-driven open-source repository to help mobile developers prepare for 
 ![GitHub last commit](https://img.shields.io/github/last-commit/vennamprasad/DevCrack-Mobile-Interviews)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/vennamprasad/DevCrack-Mobile-Interviews/pulls)
 
-## 📂 Structure
-Questions are categorized by platform and topic.
-
-- Android (Jetpack Compose, Architecture, Testing, etc.)
-- iOS (Swift, UIKit, SwiftUI)
-- Cross-platform (Flutter, KMM, React Native)
-- System Design
-- Data & Network Layer
-- DSA for Mobile Devs
-- Company-Specific Questions
 
 ## ✍️ Contributing
 
