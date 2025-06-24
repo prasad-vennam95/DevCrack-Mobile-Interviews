@@ -8,7 +8,7 @@ assignees: ''
 
 **Description**
 
-Please include a summary of the changes and the related issue.
+Please include a summary of the changes and the related issue. 
 
 **Type of change**
 
